@@ -47,8 +47,9 @@ in `TGCdatasets`:
 library(TGCdatasets)
 library(ggplot2)
 
-
+## load the data
 data("hiv_incidence")
+
 ggplot(subset(hiv_incidence, country == "Angola"), aes(x = year, y = new_cases)) +
   geom_line() +
   theme_minimal() +
